@@ -1,0 +1,252 @@
+@font-face {
+    font-family: 'Poppins Semibold';
+    src: url(Poppins/Poppins-SemiBold.ttf);
+}
+@font-face {
+    font-family: 'Poppins Light';
+    src: url(Poppins/Poppins-Light.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    width: 100%;
+    height: 80px;
+    background-color: #3DB39F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.titulo-nav{
+    height: 100%;
+    max-width: 1250px;
+    width: 100%;
+    background-color: transparent;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+main{
+    max-width: 1250px;
+    width: 100%;
+    height: calc(100vh - 80px);
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+
+}
+.grupos{
+    height: calc(100vh - 180px);
+    width: calc(100% - 80px);
+    background-color: transparent;
+}
+.titulo{
+    width: calc(100% - 80px);
+    height: 80px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Poppins Semibold';
+}
+.informacion{
+    width: calc(100% - 80px);
+    height: 200px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Poppins Semibold';
+    border: 1px solid #A2A092;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+table{
+    border-collapse: collapse;
+    margin-bottom:20px;
+    font-family: 'Poppins Semibold';
+}
+th{
+    font-size: 18px;
+    text-align: center;
+    border: 1px solid #A2A092;
+}
+tbody th{
+    font-size: 14px;
+    font-family: 'Poppins Light';
+}
+thead th{
+    padding: 10px;
+}
+.datos{
+    width: 100%;
+}
+.info-grupo{
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+ }
+.opciones-row{
+    text-align: right;
+}
+.opciones-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    width: calc(100% - 40px);
+    gap: 20px;
+    margin-right: 20px;
+    height: 32px;
+}
+
+.info-grupo{
+    width: 24px;
+    height: 24px;
+    background: url(imagenes/flecha.png) no-repeat center center;
+    background-size: cover;
+}
+.informacion-container{
+    width: 100%;
+    height: 220px;
+    margin: 20px;
+}
+.informacion-subcontainer{
+    height: calc(100% - 30px);
+    width: calc(100% - 40px);
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.informacion-titulo{
+    width: calc(100% - 40px);
+}
+.informacion-tabla, .informacion-tabla table{
+    height: 100%;
+}
+
+.informacion-tablas{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    max-width: 80%;
+    width: 100%;
+}
+.informacion-tabla1{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.informacion-tabla1{
+    display: flex;
+    align-items: center;
+}
+.informacion-tabla1 table{
+    margin: 0;
+    padding: 0;
+}
+.informacion-boton {
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+}
+.informacion-boton input{
+    border: 0;
+    color: #fff;
+    background: #3DB39F;
+    width: 150px;
+    height: 30px;
+    border-radius: 30px;
+}
+.editar-contenedor{
+    width: calc(100% - 80px);
+    height: auto;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Poppins Semibold';
+    border: 1px solid #A2A092;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.izquierdo{
+    height: 800px;
+    width: 25%;
+    background-color: transparent;
+}
+.derecho{
+    height: auto;
+    width: 75%;
+    background-color: transparent;
+}
+.editar-datos{
+    width: calc(100%  - 40px);
+    height: calc(100%  - 40px);
+    background-color: transparent;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.dato-alumno{
+    display: flex;
+    flex-direction: column;
+}
+.dato-alumno input, .dato-alumno select{
+    border: 0;
+    border-bottom: 1px solid  #A2A092;
+    height: 20px;
+}
+.dato-alumno input:focus{
+    outline: none;
+}
+.boton-guardar{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 20px;
+}
+#guardar, #agregar{
+    border: 0;
+    color: #fff;
+    background: #3DB39F;
+    width: 150px;
+    height: 30px;
+    border-radius: 30px;
+}
+#eliminar{
+    border: 1px solid #ff0000;
+    color: #ff0000;
+    background: #ffffff;
+    width: 150px;
+    height: 30px;
+    border-radius: 30px;
+}
+#guardar, #eliminar, #agregar{
+    cursor: pointer;
+}
+.imagen-datos{
+    width: calc(100% - 40px);
+    height: calc(100% - 40px);
+    background-color: transparent;
+    margin: 20px;
+}
+.imagen-alumno{
+    margin-top: 20px;
+    width: 100%;
+    height: 100%;
+    max-height: 230px;
+    background-color: pink;
+    background: url(imagenes/persona.png) no-repeat center;
+    background-size: cover;
+}
